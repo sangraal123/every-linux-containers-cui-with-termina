@@ -9,8 +9,8 @@ For our purposes, refer to this diagram to get an idea of where we are in namesp
 
 <p align="center"> <img src="https://user-images.githubusercontent.com/54195989/142301227-cb47ae78-bc34-4ad4-b71c-047e19ff919e.png") </p>
 
-<br>
-  
+[Note]
+<br>This method will works well as an alternative method to crouton, which is in maintenance mode now.
   
 #  Guide
 ## crosh
@@ -41,14 +41,19 @@ In this case, I have:
 ![remote_list](https://user-images.githubusercontent.com/54195989/142089061-34b0a99b-ea12-40b0-b9f9-7c373e5650dd.png)
 by default, which is fine because we can access what we need (or would want?) with this. I imagine we can add more image servers, but I did not.
 
-We can check an image server's wares by going to its url. We can see that the [`images`](https://us.lxd.images.canonical.com/) image server (confusingly named, though _tru, I guess_) offers many common Linux distributions.
-  
+We can check an image server's wares by going to its url. We can see that the [`images`](https://images.linuxcontainers.org/) image server (confusingly named, though _tru, I guess_) offers many common Linux distributions.
+
+[Note]
+<br>The images server is now migrated to https://images.lxd.canonical.com.
+<br>You can add it to the remote server list by executing <code>lxc remote add canonical https://images.lxd.canonical.com --protocol=simplestreams</code> command.
+<br>Then, follow the instructions using **canonical** instead of **images**.
+
 We can use:
 <br><code>lxc launch **images**:_**distribution[/release][/architecture]** **container_name**_</code>
 <br>to install images with varying degrees of specificity from there (values in _**[ ]**_ are optional).
 
 <br>For example:
-<br>centos, release 7, for amd64 (64-bit) architechture from [`images`](https://us.lxd.images.canonical.com/) with its default name
+<br>centos, release 7, for amd64 (64-bit) architechture from [`images`](https://images.linuxcontainers.org/) with its default name
 <br><code>lxc launch **images**:_**centos/7/amd64**_</code>
 
 alpine, from its development branch _edge_ image, named alp-edge
@@ -108,12 +113,12 @@ Ctrl + Alt + t
 <pre>vmc start termina</pre>
 
 ```html
-  lxc launch ubuntu:18.04 owo
-  lxc file pull owo/usr/bin/lxc /tmp/lxc
+  lxc launch ubuntu:18.04 temp
+  lxc file pull temp/usr/bin/lxc /tmp/lxc
   lxc file push /tmp/lxc penguin/usr/local/bin/
-  lxc delete owo -f
+  lxc delete temp -f
   lxc config set core.https_address :8443
-  lxc config set core.trust_password "a'really,good;password:^)"
+  lxc config set core.trust_password somepassword
 ```
 
 ### _In Terminal_
