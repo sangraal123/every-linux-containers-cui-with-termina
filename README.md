@@ -10,7 +10,7 @@ For our purposes, refer to this diagram to get an idea of where we are in namesp
 <p align="center"> <img src="https://user-images.githubusercontent.com/54195989/142301227-cb47ae78-bc34-4ad4-b71c-047e19ff919e.png") </p>
 
 [Note]
-<br>This method will works well as an alternative method to crouton, which is in maintenance mode now.
+<br>This method will work well as an alternative method to crouton, which is in maintenance mode now.
   
 #  Guide
 ## crosh
