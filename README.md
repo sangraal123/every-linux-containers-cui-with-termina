@@ -45,7 +45,7 @@ We can check an image server's wares by going to its url. We can see that the [`
 
 [Note]
 <br>The images server is now migrated to https://images.lxd.canonical.com.
-<br>You can add it to the remote server list by executing command below.
+<br>You can add it to the remote server list by executing the command below.
 <br><code>lxc remote add canonical https://images.lxd.canonical.com --protocol=simplestreams</code> 
 <br>Then, follow the instructions using **canonical** instead of **images** as the remote name.
 
