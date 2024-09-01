@@ -137,4 +137,5 @@ Ctrl + Alt + t
 <br>[Crostini Docs](https://chromium.googlesource.com/chromiumos/docs/+/HEAD/crostini_developer_guide.md)
 <br>[Ubuntu Docs](https://ubuntu.com/blog/using-lxd-on-your-chromebook)
 <br>[post on /r/Crostini](https://www.reddit.com/r/Crostini/comments/fj8ddg/instructions_for_kali_linux_on_crostini/)
+<br>[post on /r/chromeos](https://www.reddit.com/r/chromeos/comments/1di1uzj/guide_obtain_full_access_to_the_underlying_vm/)
 <br>Every `help` command
